@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+     <div class="nav">
+      <ul class="nav-h">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="#" class="active">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+      </ul>
+    </div>
+
+  <!-- Box Model-->
+   <div id="box"> </div>
+
+      <br>
+
+      <img src="https://i.ibb.co/GckCvqJ/dog-image7.jpg" alt="dogimage">
+
+      <button id="sample">Learning</button>
+
+   <script type="text/javascript">
+      window.onload = function()  {
+        console.log(`The page has loaded`);
+      }
+
+      document.getElementById('sample').addEventListener('click', listen);
+      
+      function listen() {
+        console.log('Trying an even listener');
+      }
+
+      document.getElementById('box').addEventListener('dblclick', function() {
+          console.log('Element was double-clicked');
+      })
+
+    /* get height and width of an element */
+    let size = document.getElementById('box');
+    console.log(size.offsetHeight);
+    console.log(size.offsetWidth);
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+h1 {
+    color: green;
+}
+
+p {
+    color: darkgoldenrod;
+}
+
+.bottom p {
+    color: white;}
+  
+.cool {
+    color: blue;
+}
+
+.sample1 {
+    color: blue;
+    background-color: yellow;
+}
+
+.sample2 {
+    color: purple;
+    background-color: aqua;
+    display: none;
+}
+
+.sample3 {
+    color: orange;
+    background-color: gray;
+    display: inline;
+}
+
+.sample4 {
+    color: brown;
+    background-color: black;
+    display: inline-block;
+}
+
+.grocery_square {
+    list-style: square;
+}
+
+#box { 
+    width: 320px; height: 320px;
+    padding: 10px; margin: 0;
+    border: 5px solid gray;
+    background-color: red;
+    display: inline-block;
+}
+
+.nav-h {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    overflow: hidden;
+    background-color: lightslategray;
+}
+
+.nav-h li {
+    float: inline-start;
+}
+
+.nav-h li a  {
+    display: block; color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-h li a:hover {
+    background-color: #333;
+}
+
+.active {
+    background-color: #5448c8;
+}
+
+.nav {
+    margin-bottom: 20px;
+}

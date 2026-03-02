@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Understand divs</title>
+    <style>
+        .outside {padding:16px; background-color: green;
+                  width: 884px; position: relative; 
+                  text-align: center;
+                }
+        .top { width:868px; background-color: white; }
+        .sides { width: 150px; height: 400px;
+                background-color: red; display: inline-block;}
+        .center {width: 568px; height: 400px;
+                background-color: lightblue; display: inline-block;}
+        .bottom {width: 868px; height: 30px; margin-top: 16px;
+                background-color: blue; color: white;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" >
+  </head>
+  <body>
+     <div class="nav">
+      <ul class="nav-h">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+      </ul>
+    </div>
+    <!-- The div tags are not styled -->
+    <!-- Any content contained with these elements
+     will dip-->
+    <div class="outside">
+      <!-- Top div can have navigation or a banner-->
+       <div class="top"><h1>Header Section</h1></div>
+
+        <!-- Left Side div can have navigation or other information-->
+        <div class="sides"><p>Left Side Section</p></div>
+
+        <!-- Center div, where most of your content will be-->
+         <div class="center"><p>Center Section</p></div>
+
+         <!-- Right Sid div can have navigation or other information-->
+      <div class="sides"><p>Right Side Section</p></div>
+
+      <!-- Bottom div is for footer information-->
+      <div class="bottom"><p>Footer Section</p></div> 
+    </div>
+  
+    <div class="section_c">
+      <p style="color:purple">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea quod itaque, 
+        sunt voluptatem assumenda obcaecati aperiam tempore illum impedit!</p>
+    
+      <h3>My Grocery List</h3>
+      <ul class="grocery_list" id="grocery">
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Bread</li>
+          <li>Lunch Meat</li>
+          <li>Cheese</li>
+          <li>Cereal</li>
+      </ul>
+
+      <button onclick="changeList()">Click Here</button>
+      <h2>Link to ESPN</h2>
+      <a href="https://www.espn.com" target="_blank">ESPN</a>
+    
+      </div>
+        <script type="text/javascript"> 
+          /* Put javascript code directly here */
+          function changeList()  {
+            document.getElementById('grocery')
+            .classList.toggle('grocery_square');
+          }
+        </script>
+  </body>
+</html>
