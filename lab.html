@@ -1,0 +1,109 @@
+<!-- Task 1:
+Ensure your page is setup correctly using the emmet html:5. Add the link element to your css file. Inside
+the body element, add the elements for your navigation. Include this page as one of the line item
+elements with the href as a # and the class active. Add the line item element for this page on the other
+html pages in your project. Verify all your pages are linked using your Go Live. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+   <link rel="stylesheet" type="text/css" href="css/styles.css" >
+</head>
+<body>
+      <nav><
+        <ul class="nav-h">
+            <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+        <li><a href="#" class="active">Lab</a></li>
+      
+        </ul>
+        </nav>
+      
+
+
+<!-- Task 2:
+Below your navigation create a div element. This element should have a class called lab. It should have a
+style that sets the margin to 36 pixels. Add the following elements to your div.
+- H1 element with “My favorite types of Pizza” as its inner text.
+- ol element that has 5 line items inside. The values for your line items should include your
+favorite pizza types.
+- The ol element should have a class attribute called my-roman.
+- The ol element should have an id called pizza;
+- Add a button with a onclick that says pizzaList();
+Add the my-roman class to your CSS file. It will have a list-style property called lower-roman.
+Adding a script element at the bottom but still inside your body element. Add a function called
+pizzaList(). This function will get the element by id and use the toggle method with my-roman. Verify
+that the function executes and the list changes.  -->
+
+
+    
+    <div class="lab">
+        <style>
+        .lab {  margin:36px
+                }
+  </style>
+      
+      <h1>My favorite type of Pizza</h1>
+
+      <ol class="my-roman" id="pizza">
+        <li>Chicken Fajita</li>
+        <li>Cheese Lover</li>
+        <li>BBQ Chicken</li>
+        <li>Malai Boti</li>
+        <li>Veggie pizza</li>
+      </ol>
+
+      <button onlick="pizzaList()">Pizza List</button>
+      </div>
+
+    
+
+<!-- Task 3:
+Add a second div to your page. This div will also have the class called lab. Add a form inside this div and
+the following elements inside the form tag.
+- Label that says “The values below will be added together”
+- Add the <br /> element at the end of the </label>
+- Input 1 will be of type text with an id of num1 and a name of num1
+- Input 2 will be of type text with an id of num2 and a name of num2
+- A p element with an id called total. Nothing in the inner text area
+- Button will be of type button and an onclick called addThem(). The button text is “Sum”.
+In the script element section, write a function called addThem(). That function will get the inner text of
+input 1 and input 2 and assign them to let variables. Add those variables and assign them to a let total.
+Assign the result plus the words “Sum total “ to the paragraph element using its id. -->
+
+        <div class="lab"> 
+            <form>
+                <label>The values below will be added together</label> 
+              <br><br>
+                <input type="game" id="num1" name="num1"/> <br> <br>
+                <input type="school" id="num2" name="num2"/>
+                
+                <p id="total"></p>
+                <button type="button" onclick="addThem()">Sum</button>
+                </form>
+        </div>
+        <script type="text/javascript">
+            function pizzaList() {
+              document.getElementById('pizza')
+              .classList.toggle('my-roman');
+            }
+            function addThem() {
+                let place = document.getElementById('num1').value;
+                let restaurent = document.getElementById('num2').value;
+
+              document.getElementById('pizza').innerHTML = place;
+
+              alert(`Name: ${place} & Location: ${restaurant}` ); 
+          }
+
+        </script>
+</body>
+</html>
+
+        
